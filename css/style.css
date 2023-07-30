@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Style+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  position: relative;
+  height: 100vh;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 3.2rem;
+  color: #5C5956;
+  padding-top: 30px;
+}
+
+.stop-watch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.stop-watch .time {
+  font-size: 4rem;
+  font-family: Roboto;
+}
+.stop-watch .btns {
+  display: flex;
+  gap: 15px;
+}
+.stop-watch .btns .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border: 1px solid;
+}
+.stop-watch .btns .start {
+  background: rgba(0, 128, 0, 0.5);
+  color: #008000;
+  border-color: #008000;
+}
+.stop-watch .btns .pause {
+  background: rgba(251, 177, 59, 0.568627451);
+  color: #FBB03B;
+  border-color: #FBB03B;
+}
+.stop-watch .btns .reset {
+  background: rgba(255, 0, 0, 0.5);
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+}/*# sourceMappingURL=style.css.map */

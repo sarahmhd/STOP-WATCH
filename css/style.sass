@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Style+Script&display=swap')
+
+$gray-color: #5C5956
+$reset-color: #ff0000
+$reset-bg: rgba(255, 0, 0, 0.5)
+$start-color: #008000
+$start-bg: rgba(0, 128, 0, 0.5)
+$pause-color: #FBB03B
+$pause-bg: #fbb13b91
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: #000
+    color: #fff
+    position: relative
+    height: 100vh
+
+h1
+    margin: auto
+    text-align: center
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 2px
+    font-size: 3.2rem
+    color: $gray-color
+    padding-top: 30px
+
+.stop-watch
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 10px
+    .time
+        font-size: 4rem
+        font-family: Roboto
+    .btns
+        display: flex
+        gap: 15px
+        .btn
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 22px
+            border: 1px solid
+        .start
+            background: $start-bg
+            color: $start-color
+            border-color: $start-color
+        .pause
+            background: $pause-bg
+            color: $pause-color
+            border-color: $pause-color
+        .reset
+            background: $reset-bg
+            color: $reset-color
+            border-color: $reset-color
+
+@media (max-width:480px)
+    h1
+        font-size: 2rem !important
